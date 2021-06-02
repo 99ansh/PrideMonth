@@ -1,0 +1,21 @@
+{
+  "name": "#Pride",
+  "version": "1.0",
+  "description":"Changes your LinkedIn background",
+  "permissions": ["activeTab","declarativeContent", "https://www.linkedin.com/*"],
+  
+  "content_scripts":[
+	{
+		"matches":["https://www.linkedin.com/*"],
+    "run_at":"document_end",
+    "js":["content_script.js"]
+	}	
+  ],
+ "icons": {
+      "16": "images/pride_16.png",
+      "32": "images/pride_32.png",
+      "48": "images/pride_48.png",
+      "128": "images/pride_128.png"
+  },
+  "manifest_version": 2
+}
